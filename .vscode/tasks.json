@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "java (buildArtifact)",
+			"mainClass": "com.rocketseat.certification_nlw.CertificationNlwApplication",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput}",
+				"${dependencies}"
+			],
+			"problemMatcher": [],
+			"label": "java (buildArtifact): nlw-expert-java",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

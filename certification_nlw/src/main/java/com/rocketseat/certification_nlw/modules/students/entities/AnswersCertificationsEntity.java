@@ -13,6 +13,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -20,24 +21,25 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "answers_certification_students")
-public class AnswersCertificatiomsEntity {
+@Builder
+public class AnswersCertificationsEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     
-    @JoinColumn(name = "certification_id")
+    @Column(name = "certification_id")
     private UUID certificationID;
     
-    @ManyToOne()
-    @JoinColumn(name="certification_id")
+    @ManyToOne
+    @JoinColumn(name = "certification_id", insertable = false, updatable = false)
     private CertificationStudentEntity certificationStudentEntity;
 
     @Column(name = "student_id")
     private UUID studentID;
     
     @ManyToOne
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "student_id", insertable = false, updatable = false)
     private StudentEntity studentEntity;
     
     @Column(name = "question_id")

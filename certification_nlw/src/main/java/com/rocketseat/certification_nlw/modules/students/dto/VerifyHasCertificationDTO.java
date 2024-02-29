@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 public class VerifyHasCertificationDTO {
@@ -12,5 +13,4 @@ public class VerifyHasCertificationDTO {
     private String email;
     private String technology;
 
-    
 }

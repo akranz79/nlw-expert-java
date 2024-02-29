@@ -10,10 +10,10 @@ Ao final da prova, ele ira receber qual foi a sua nota alcançada, quantos acert
 
   Nesta aula vamos configurar:
   
-  Spring Data JPA
-  Docker-compose
-  Anotations
-  PostGreSQL
-  ...
+  Spring Data JPA <br>
+  Docker-compose <br>
+  Anotations <br>
+  PostGreSQL <br>
+  ... <br>
 
 ### Terceira aula

@@ -8,6 +8,12 @@ Ao final da prova, ele ira receber qual foi a sua nota alcançada, quantos acert
 
 ### Segunda aula
 
-  Spring Data JPA
+  Nesta aula vamos configurar:
+  
+  Spring Data JPA <br>
+  Docker-compose <br>
+  Anotations <br>
+  PostGreSQL <br>
+  ... <br>
 
 ### Terceira aula
